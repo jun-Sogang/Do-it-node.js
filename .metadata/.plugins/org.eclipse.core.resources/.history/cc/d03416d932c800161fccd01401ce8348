@@ -1,0 +1,7 @@
+var url = require('url');
+
+var curURL = url.parse('https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&oquery=do+it+nodejs&ie=utf8&query=nconf');
+var curStr = url.format(curURL);
+
+console.log('주소 문자열 : %s',curStr);
+console.dir(curURL);
